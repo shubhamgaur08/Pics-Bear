@@ -1,0 +1,36 @@
+.inputBoxContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.input {
+  height: 50px;
+  width: 100%;
+  border: 1px solid #353640;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #444654;
+  font-family: Founders Grotesk, Arial Black, sans-serif;
+  color: white;
+  resize: none;
+  padding: 10px;
+}
+
+.input::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .input {
+    font-size: 18px;
+    height: 100px;
+  }
+}
