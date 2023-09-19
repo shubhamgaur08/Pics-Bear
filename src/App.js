@@ -5,6 +5,7 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
 // Analytics
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyA9y3ED6okc-WFmbojgkFGb3232QndpeLs",
   authDomain: "picsbear-c9487.firebaseapp.com",
