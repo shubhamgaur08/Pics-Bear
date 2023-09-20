@@ -10,7 +10,7 @@ import GoogleAuthButtons from "../Components/GoogleAuthButtons";
 import {
   GoogleAuthProvider,
   getAuth,
-  signInWithRedirect,
+  signInWithPopup,
   getRedirectResult,
   signOut,
   onAuthStateChanged,
@@ -34,7 +34,7 @@ function GenerateImagePage({ app }) {
   }, []);
 
   function handleLogin() {
-    signInWithRedirect(auth, provider);
+    signInWithPopup(auth, provider);
 
     getRedirectResult(auth)
       .then((result) => {
