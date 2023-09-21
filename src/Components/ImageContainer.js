@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { CircularProgress } from "@mui/material";
 import "./ImageContainer.css";
-
+  import CircularWithValueLabel from "./Progress"
+  
 const ImageContainer = ({
   isError,
   errorMessage,
@@ -25,12 +25,12 @@ const ImageContainer = ({
           {errorMessage}
         </motion.p>
       ) : isLoading ? (
-        <CircularProgress data-testid="circular-progress" />
+        <CircularWithValueLabel  />
       ) : hasImage ? (
         <motion.img
           initial={{ opacity: 0.5, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.5 }}
+          transition={{ duration: 1 }}
           className="image"
           src={imageUrl}
           alt={userPrompt}
